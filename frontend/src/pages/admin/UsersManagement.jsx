@@ -23,7 +23,7 @@ const UsersManagement = () => {
   useEffect(() => {
     fetchUsers();
     fetchDepartments();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchDepartments = async () => {
     try {

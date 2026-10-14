@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
 import api from '../../config/api';
-import { useAuth } from '../../context/AuthContext';
 
 const typeBadgeClasses = (label) => {
   if (label === 'عمل') return 'bg-blue-100 text-blue-800';
@@ -29,7 +28,6 @@ const statusLabelAr = (status) => {
 };
 
 const History = () => {
-  const { employee } = useAuth();
   const [allTasks, setAllTasks] = useState([]);
   const [loading, setLoading] = useState(true);
 

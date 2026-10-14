@@ -49,7 +49,7 @@ const WorkEntries = () => {
         ]);
         setProducts(prodRes.data?.products || prodRes.data || []);
         setOperations(opRes.data?.operations || opRes.data || []);
-      } catch (e) {
+      } catch {
         // ignore
       }
     };

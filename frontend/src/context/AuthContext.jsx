@@ -3,6 +3,7 @@ import api from '../config/api';
 
 const AuthContext = createContext(null);
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -42,7 +43,7 @@ export const AuthProvider = ({ children }) => {
           };
           setEmployee(normalizedEmployee);
           localStorage.setItem('employee', JSON.stringify(normalizedEmployee));
-        } catch (error) {
+        } catch {
           // Token is invalid or expired, clear everything
           localStorage.removeItem('token');
           localStorage.removeItem('employee');
