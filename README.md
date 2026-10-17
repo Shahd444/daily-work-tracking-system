@@ -1,4 +1,4 @@
-# JODDB – Daily Work Tracking & Approval System
+# Daily Work Tracking & Approval System
 
 A full-stack web application for recording daily production work, approving it, and measuring performance.
 It was built during a hackathon to model a real operational environment:
